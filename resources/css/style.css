@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 body, input, button {
     font-family: 'Roboto', sans-serif;
@@ -28,11 +28,7 @@ header input {
     font-weight:400;
     text-indent:20px;
     background:rgba(255,255,255,0.2);
-    border-top-left-radius:5px;
-    border-bottom-left-radius:50px;
-    border-top-right-radius:25px;
-    border-bottom-right-radius:25px;
-    border-radius:5px;
+    border-radius: 5px;
     border:0;
     box-shadow:none;
     outline:none;
