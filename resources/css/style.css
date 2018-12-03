@@ -180,12 +180,22 @@ ul.todo li .buttons button svg {
 ul.todo li .buttons button.complete svg {
     border-radius:11px;
     border:1.5px solid #25b99a;
+
+    transition:background 0.2s ease;
 }
 
 ul.todo#completed li .buttons button.complete svg {
     background:#25b99a;
     border:0;
 
+}
+
+ul.todo:not(#completed) li .buttons button.complete:hover svg {
+    background:rgba(37,185,154,0.75);
+}
+
+ul.todo:not(#completed) li .buttons button.complete:hover svg.fill {
+    fill:#fff;
 }
 
 ul.todo#completed li .buttons button.complete svg .fill {
