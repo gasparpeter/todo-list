@@ -26,14 +26,11 @@ var completeSVG = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000
     var parent = item.parentNode;
     var id = parent.id;
 
-    if (id === 'todo') {
-        // It's a todo item to be completed
-        
-    } else {
-        // It's a completed item to be "re-done"
-    }
+    // Check if the item should be added to the completed list or to re-added to the todo list
+    var target = (id === 'todo') ?  document.getElementById('completed'): document.getElementById('todo')
 
-
+      parent.removeChild(item);
+    target.insertBefore(item, target.childNodes[0]);
   }
 
 // Adds a new item to the todo list
